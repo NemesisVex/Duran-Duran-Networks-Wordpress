@@ -32,6 +32,8 @@
 			<?php
 				if ( 'post' == get_post_type() )
 					ddn_posted_on();
+				
+				/*
 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>
@@ -40,6 +42,8 @@
 				endif;
 
 				edit_post_link( __( 'Edit', 'ddn' ), '<span class="edit-link">', '</span>' );
+				 * 
+				 */
 			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

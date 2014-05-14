@@ -12,3 +12,7 @@ Text Domain: ddn
 	text-decoration: none;
 	color: #000;
 }
+
+.screen-reader-text {
+	display: none;
+}

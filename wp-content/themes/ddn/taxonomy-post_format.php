@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="archive-title">
+				<h2 class="archive-title">
 					<?php
 						if ( is_tax( 'post_format', 'post-format-aside' ) ) :
 							_e( 'Asides', 'ddn' );
@@ -52,7 +52,7 @@ get_header(); ?>
 
 						endif;
 					?>
-				</h1>
+				</h2>
 			</header><!-- .archive-header -->
 
 			<?php
@@ -81,5 +81,5 @@ get_header(); ?>
 
 <?php
 get_sidebar( 'content' );
-get_sidebar();
+get_sidebar( 'ddn' );
 get_footer();

@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'ddn' ), get_search_query() ); ?></h1>
+				<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'ddn' ), get_search_query() ); ?></h2>
 			</header><!-- .page-header -->
 
 				<?php
@@ -45,5 +45,5 @@ get_header(); ?>
 
 <?php
 get_sidebar( 'content' );
-get_sidebar();
+get_sidebar( 'ddn' );
 get_footer();

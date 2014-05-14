@@ -14,7 +14,7 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'ddn' ); ?></h1>
+				<h2 class="page-title"><?php _e( 'Not Found', 'ddn' ); ?></h2>
 			</header>
 
 			<div class="page-content">
@@ -28,5 +28,5 @@ get_header(); ?>
 
 <?php
 get_sidebar( 'content' );
-get_sidebar();
+get_sidebar( 'ddn' );
 get_footer();

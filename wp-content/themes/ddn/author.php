@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="archive-title">
+				<h2 class="archive-title">
 					<?php
 						/*
 						 * Queue the first post, that way we know what author
@@ -30,7 +30,7 @@ get_header(); ?>
 
 						printf( __( 'All posts by %s', 'ddn' ), get_the_author() );
 					?>
-				</h1>
+				</h2>
 				<?php if ( get_the_author_meta( 'description' ) ) : ?>
 				<div class="author-description"><?php the_author_meta( 'description' ); ?></div>
 				<?php endif; ?>
@@ -70,5 +70,5 @@ get_header(); ?>
 
 <?php
 get_sidebar( 'content' );
-get_sidebar();
+get_sidebar( 'ddn' );
 get_footer();

@@ -25,7 +25,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h2 class="page-title">
 					<?php
 						if ( is_day() ) :
 							printf( __( 'Daily Archives: %s', 'ddn' ), get_the_date() );
@@ -41,7 +41,7 @@ get_header(); ?>
 
 						endif;
 					?>
-				</h1>
+				</h2>
 			</header><!-- .page-header -->
 
 			<?php
@@ -70,5 +70,5 @@ get_header(); ?>
 
 <?php
 get_sidebar( 'content' );
-get_sidebar();
+get_sidebar( 'ddn' );
 get_footer();

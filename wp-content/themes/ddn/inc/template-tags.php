@@ -77,7 +77,7 @@ function ddn_post_nav() {
 
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'ddn' ); ?></h1>
+		<h4 class="screen-reader-text"><?php _e( 'Post navigation', 'ddn' ); ?></h4>
 		<div class="nav-links">
 			<?php
 			if ( is_attachment() ) :

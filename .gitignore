@@ -1,4 +1,5 @@
 configuration.php
 environment.php
 wp-config.php
+/wp-content/plugins/bootstrap-overrides/
 /wp-content/themes/ddn/
